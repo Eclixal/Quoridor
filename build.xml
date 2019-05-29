@@ -25,7 +25,11 @@
     <target name="dist" depends="compile"
             description="generate the distribution" >
         <mkdir dir="${dist}/lib"/>
-        <jar jarfile="${dist}/lib/Quoridor.jar" basedir="${build}"/>
+        <jar jarfile="${dist}/lib/Quoridor.jar" basedir="${build}">
+            <manifest>
+                <attribute name="Main-Class" value="Launcher"/>
+            </manifest>
+        </jar>
     </target>
 
     <target name="clean"
