@@ -17,7 +17,7 @@ public abstract class Joueur {
     protected Plateau plateau;
 
     /**
-      *Créé un nouvel objet Humain
+      * Créé un nouvel objet Humain
       * @param nom le nom du joueur
       * @param numero le numéro du joueur defini selon l'ordre de création (ex joueur 1 , joueur 2 ...)
       * @param couleur la couleur du joueur (indique la forme du pion en mode texte)
