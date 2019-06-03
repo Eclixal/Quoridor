@@ -10,8 +10,8 @@ import java.util.ArrayList;
 public abstract class Joueur {
 
     protected String nom;
-    protected final int numero;
-    protected final String couleur;
+    protected final int NUMERO;
+    protected final String COULEUR;
     protected ArrayList<Barriere> barrieres;
     protected Pion pion;
     protected Plateau plateau;
@@ -27,8 +27,8 @@ public abstract class Joueur {
       */
     public Joueur(String nom, int numero, String couleur, ArrayList<Barriere> barrieres, Pion pion, Plateau plateau) {
         this.nom = nom;
-        this.numero = numero;
-        this.couleur = couleur;
+        this.NUMERO = numero;
+        this.COULEUR = couleur;
         this.barrieres = barrieres;
         this.pion = pion;
         this.plateau = plateau;
