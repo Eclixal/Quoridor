@@ -7,9 +7,9 @@ package quoridor;
   */
 public enum Difficulte {
 
-    FACILE,
-    MOYEN,
-    DIFFICILE,
-    IMPOSSIBLE;
+    FACILE, //bouge de maniere aleatoire
+    MOYEN,  //joue comme un enfant de 5 ans
+    DIFFICILE, //joue et bien
+    IMPOSSIBLE; //Reincarnation de Kasparov (mais au Quoridor)
 
 }
