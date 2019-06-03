@@ -1,7 +1,7 @@
 package quoridor;
 
 /**
-  *Enumeration contenant les différents niveaux de difficulté de l'IA
+  *Enumération contenant les différents niveaux de difficulté de l'IA
   *@author AlexM02 , Drmarsupial35 , Eclixal , griffin568
   *@version 1.0
   */
