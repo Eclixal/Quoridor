@@ -1,9 +1,9 @@
 package quoridor;
 
 /**
-  *Enumération listant les différents modes de jeu
-  *@author AlexM02 , Drmarsupial35 , Eclixal , griffin568
-  *@version 1.0
+  * Enumération listant les différents modes de jeu
+  * @author AlexM02 , Drmarsupial35 , Eclixal , griffin568
+  * @version 1.0
   */
 public enum Mode {
 

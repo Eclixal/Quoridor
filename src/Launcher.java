@@ -1,6 +1,6 @@
 /**
-  *Cette classe permet de lancer l'application
-  *@author AlexM02 , Drmarsupial35 , Eclixal , griffin568
+  * Cette classe permet de lancer l'application
+  * @author AlexM02 , Drmarsupial35 , Eclixal , griffin568
   */
 public class Launcher {
 
