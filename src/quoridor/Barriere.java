@@ -7,7 +7,7 @@ package quoridor;
   */
 public class Barriere {
 
-    private String final couleur;
+    private String final COULEUR;
     private int[] coordonnees;
 
     /**
@@ -16,7 +16,7 @@ public class Barriere {
       *@param coordonnees les coordonnées de la barrière sur le plateau (null si non posée)
       */
     public Barriere(String couleur, int[] coordonnees) {
-        this.couleur = couleur;
+        this.COULEUR = couleur;
         this.coordonnees = coordonnees;
     }
 

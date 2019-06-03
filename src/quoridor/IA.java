@@ -9,7 +9,7 @@ import java.util.ArrayList;
   */
 public class IA extends Joueur {
 
-    private final Difficulte difficulte;
+    private final Difficulte DIFFICULTE;
     private int[][] plusCourtChemin;
 
     /**
@@ -24,7 +24,7 @@ public class IA extends Joueur {
       */
     public IA(String nom, int numero, String couleur, ArrayList<Barriere> barrieres, Pion pion, Plateau plateau, Difficulte difficulte) {
         super(nom, numero, couleur, barrieres, pion, plateau);
-        this.difficulte = difficulte;
+        this.DIFFICULTE = difficulte;
     }
 
     /**

@@ -7,7 +7,7 @@ package quoridor;
   */
 public class Pion {
 
-    private final String couleur;
+    private final String COULEUR;
     private int[][] deplacementPossibles;
     private int[] coordonnees;
     private Joueur joueur;
@@ -19,7 +19,7 @@ public class Pion {
       *@param joueur le joueur à qui appartient le pion
       */
     public Pion(String couleur, int[] coordonnees, Joueur joueur) {
-        this.couleur = couleur;
+        this.COULEUR = couleur;
         this.coordonnees = coordonnees;
         this.joueur = joueur;
     }
