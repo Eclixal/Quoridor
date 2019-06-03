@@ -29,7 +29,7 @@ public class Barriere {
     }
 
     /**
-      *Change la couleur de la barriere
+      *Modifie la couleur de la barriere
       *@param couleur la nouvelle couleur
       */
     public void setCouleur(String couleur) {
@@ -45,7 +45,7 @@ public class Barriere {
     }
 
     /**
-      *Change les coordonnees de la barriere
+      *Modifie les coordonnees de la barriere
       *@param coordonnees un tableau contenant les nouvelles coordonnees
       */
     public void setCoordonnees(int[] coordonnees) {
