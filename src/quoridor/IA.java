@@ -9,7 +9,7 @@ import java.util.ArrayList;
   */
 public class IA extends Joueur {
 
-    private Difficulte difficulte;
+    private final Difficulte difficulte;
     private int[][] plusCourtChemin;
 
     /**
@@ -33,14 +33,6 @@ public class IA extends Joueur {
       */
     public Difficulte getDifficulte() {
         return difficulte;
-    }
-
-    /**
-      *Modifie la difficulté de l'IA
-      *@param difficulte la nouvelle difficulté de l'IA
-      */
-    public void setDifficulte(Difficulte difficulte) {
-        this.difficulte = difficulte;
     }
 
     /**
