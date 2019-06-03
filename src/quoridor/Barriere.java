@@ -3,7 +3,7 @@ package quoridor;
 /**
   *Cette classe gere les barrieres utilisees par les joueurs
   *@author AlexM02 , Drmarsupial35 , Eclixal , griffin568
-  *@version 0.0.1
+  *@version 0.1.0
   */
 public class Barriere {
 
