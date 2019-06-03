@@ -7,7 +7,7 @@ package quoridor;
   */
 public class Barriere {
 
-    private String couleur;
+    private String final couleur;
     private int[] coordonnees;
 
     /**
@@ -28,13 +28,6 @@ public class Barriere {
         return couleur;
     }
 
-    /**
-      *Modifie la couleur de la barrière
-      *@param couleur la nouvelle couleur de la barrière
-      */
-    public void setCouleur(String couleur) {
-        this.couleur = couleur;
-    }
 
     /**
       *Retourne les coordonnées de la barrière
