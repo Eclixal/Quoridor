@@ -9,11 +9,12 @@
 
 ---
 
-####**Compilation des classes de test**:
+#### **Compilation des classes de test**:
 
 `javac -cp .;junit-4.13-beta-3.jar;hamcrest-core-1.3.jar -d ../class ../src/test/*.java`
 
-####**Execution des classes de test**
+#### **Execution des classes de test**
+
 `java -cp ../class;junit-4.13-beta-3.jar;hamcrest-core-1.3.jar org.junit.runner.JUnitCore ClassDeTest`
 
 ###### _**Attention !** junit-4.13-beta-3.jar et hamcrest-core-1.3.jar doivent être dans votre dossier ws_

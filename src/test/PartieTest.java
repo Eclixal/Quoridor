@@ -2,10 +2,10 @@ package test;
 
 import org.junit.Test;
 
-public class PlateauTest {
+public class PartieTest {
 
     @Test()
-    public void testPlateau() {
+    public void test() {
 
     }
 
