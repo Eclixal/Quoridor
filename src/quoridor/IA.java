@@ -52,13 +52,16 @@ public class IA extends Joueur {
     }
 
     /**
-      *Actualise le plus court chemin en deplacement de pion que l'IA prevoie
+      *Modifie le plus court chemin en deplacement de pion que l'IA prevoie
       *@param plusCourtChemin un tableau a deux dimensions contenant le plus court chemin que l'IA doit identifier
       */
     public void setPlusCourtChemin(int[][] plusCourtChemin) {
         this.plusCourtChemin = plusCourtChemin;
     }
 
+    /**
+      *Identifie le plus court chemin pour chacun des joueurs et planifie les actions de l'IA en conséquences
+      */
     public void plannification() {
 
     }
