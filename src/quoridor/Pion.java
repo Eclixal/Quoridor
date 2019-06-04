@@ -10,18 +10,15 @@ public class Pion {
     private final String COULEUR;
     private int[][] deplacementPossibles;
     private int[] coordonnees;
-    private Joueur joueur;
 
     /**
       * Créé un nouvel objet Pion
       * @param couleur la couleur du joueur (désigne une forme en mode texte)
       * @param coordonnees les coordonnées de départ du pion
-      * @param joueur le joueur à qui appartient le pion
       */
     public Pion(String couleur, int[] coordonnees, Joueur joueur) {
         this.COULEUR = couleur;
         this.coordonnees = coordonnees;
-        this.joueur = joueur;
     }
 
     /**
