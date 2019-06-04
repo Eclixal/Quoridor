@@ -35,7 +35,7 @@ public class Pion {
 
     /**
       * Retourne les coordonnées du pion
-      * @return un tableau contenant les coordonnées du pion
+      * @return les coordonnées du pion sous la forme d'un objet Coordonnee
       */
     public Coordonnee getCoordonnee() {
         return this.coordonnee;

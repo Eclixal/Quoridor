@@ -31,7 +31,7 @@ public class Barriere {
 
     /**
       * Retourne les coordonnées de la barrière
-      * @return les coordonnées de la barrière sous forme d'un tableau
+      * @return les coordonnées de la barrière sous la forme d'un objet Coordonnee
       */
     public Coordonnee getCoordonnee() {
         return coordonnee;
@@ -39,7 +39,7 @@ public class Barriere {
 
     /**
       * Modifie les coordonnées de la barrière
-      * @param coordonnee un tableau contenant les nouvelles coordonnées de la barrière
+      * @param coordonnee les nouvelles coordonnées de la barrière
       */
     public void setCoordonnee(Coordonnee coordonnee) {
         this.coordonnee = coordonnee;
