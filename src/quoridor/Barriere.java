@@ -7,17 +7,17 @@ package quoridor;
   */
 public class Barriere {
 
-    private String final COULEUR;
-    private int[] coordonnees;
+    private final String COULEUR;
+    private Coordonnee coordonnee;
 
     /**
       * Créé un nouvel objet Barriere
       * @param couleur la couleur du joueur
-      * @param coordonnees les coordonnées de la barrière sur le plateau (null si non posée)
+      * @param coordonnee les coordonnées de la barrière sur le plateau (null si non posée)
       */
-    public Barriere(String couleur, int[] coordonnees) {
+    public Barriere(String couleur, Coordonnee coordonnee) {
         this.COULEUR = couleur;
-        this.coordonnees = coordonnees;
+        this.coordonnee = coordonnee;
     }
 
     /**
@@ -25,7 +25,7 @@ public class Barriere {
       * @return la couleur de la barrière
       */
     public String getCouleur() {
-        return couleur;
+        return COULEUR;
     }
 
 
@@ -33,15 +33,15 @@ public class Barriere {
       * Retourne les coordonnées de la barrière
       * @return les coordonnées de la barrière sous forme d'un tableau
       */
-    public int[] getCoordonnees() {
-        return coordonnees;
+    public Coordonnee getCoordonnee() {
+        return coordonnee;
     }
 
     /**
       * Modifie les coordonnées de la barrière
-      * @param coordonnees un tableau contenant les nouvelles coordonnées de la barrière
+      * @param coordonnee un tableau contenant les nouvelles coordonnées de la barrière
       */
-    public void setCoordonnees(int[] coordonnees) {
-        this.coordonnees = coordonnees;
+    public void setCoordonnee(Coordonnee coordonnee) {
+        this.coordonnee = coordonnee;
     }
 }

@@ -29,7 +29,7 @@ public class Pion {
       * @return la couleur du pion
       */
     public String getCouleur() {
-        return couleur;
+        return this.COULEUR;
     }
 
 
@@ -38,7 +38,7 @@ public class Pion {
       * @return un tableau contenant les coordonnées du pion
       */
     public int[] getCoordonnees() {
-        return coordonnees;
+        return this.coordonnees;
     }
 
     /**
@@ -54,7 +54,7 @@ public class Pion {
       * @return les différents déplacements possibles du pion sous la forme d'un tableau à deux dimensions
       */
     public int[][] getDeplacementPossibles() {
-        return deplacementPossibles;
+        return this.deplacementPossibles;
     }
 
     /**
