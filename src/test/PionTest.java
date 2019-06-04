@@ -11,7 +11,6 @@ public class PionTest {
     @Test()
     public void testPion() {
         Pion pion = new Pion("red", new Coordonnee(2,1, -1, -1));
-        Joueur joueur1 = new Humain("Joueur1", 1,"red", null, pion, null);
 
         assertNotNull(pion.getCoordonnee());
         assertNotNull(pion.getCouleur());
@@ -19,6 +18,10 @@ public class PionTest {
         assertEquals(2, pion.getCoordonnee().getStartX());
         assertEquals(1, pion.getCoordonnee().getStartY());
 
+        pion.setCoordonnee(new Coordonnee(10,4, -1,-1));
+
+        assertEquals(10, pion.getCoordonnee().getStartX());
+        assertEquals(4, pion.getCoordonnee().getStartY());
     }
 
 }

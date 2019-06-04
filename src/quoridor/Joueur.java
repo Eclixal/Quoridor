@@ -43,14 +43,6 @@ public abstract class Joueur {
     }
 
     /**
-      * Modifie le nom du joueur
-      * @param nom le nouveau nom du joueur
-      */
-    public void setNom(String nom) {
-        this.nom = nom;
-    }
-
-    /**
       * Retourne le numéro du joueur
       * @return le numero du joueur
       */
@@ -85,17 +77,17 @@ public abstract class Joueur {
     /**
       * Déplace le pion vers de nouvelles coordonnées
       * si celles-ci sont atteignables
-      * @param coordonnees les coordonnées à atteindre
+      * @param coordonnee les coordonnées à atteindre
       */
-    public void deplacerPion(int[] coordonnees) {
+    public void deplacerPion(Coordonnee coordonnee) {
 
     }
 
     /**
       * Place une barrière aux coordonnées sélectionnées s'il en reste une au joueur
-      * @param coordonnees les coordonnées où placer la barrière
+      * @param coordonnee les coordonnées où placer la barrière
       */
-    public void placerBarriere(int[] coordonnees) {
+    public void placerBarriere(Coordonnee coordonnee) {
 
     }
 
