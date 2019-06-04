@@ -9,18 +9,18 @@ public class Pion {
 
     private final String COULEUR;
     private int[][] deplacementPossibles;
-    private int[] coordonnees;
+    private Coordonnee coordonnee;
     private Joueur joueur;
 
     /**
       * Créé un nouvel objet Pion
       * @param couleur la couleur du joueur (désigne une forme en mode texte)
-      * @param coordonnees les coordonnées de départ du pion
+      * @param coordonnee les coordonnées de départ du pion
       * @param joueur le joueur à qui appartient le pion
       */
-    public Pion(String couleur, int[] coordonnees, Joueur joueur) {
+    public Pion(String couleur, Coordonnee coordonnee, Joueur joueur) {
         this.COULEUR = couleur;
-        this.coordonnees = coordonnees;
+        this.coordonnee = coordonnee;
         this.joueur = joueur;
     }
 
@@ -37,16 +37,16 @@ public class Pion {
       * Retourne les coordonnées du pion
       * @return un tableau contenant les coordonnées du pion
       */
-    public int[] getCoordonnees() {
-        return this.coordonnees;
+    public Coordonnee getCoordonnee() {
+        return this.coordonnee;
     }
 
     /**
       * Modifie les coordonnées du pion
       * @param coordonnees les nouvelles coordonnées du pion
       */
-    public void setCoordonnees(int[] coordonnees) {
-        this.coordonnees = coordonnees;
+    public void setCoordonnee(Coordonnee coordonnees) {
+        this.coordonnee = coordonnees;
     }
 
     /**

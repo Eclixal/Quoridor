@@ -16,18 +16,12 @@ public class BarriereTest {
         assertNotNull(barriere.getCouleur());
         assertEquals("red", barriere.getCouleur());
 
-        int[] f = new int[4];
-        f[0] = 2;
-        f[1] = 4;
-        f[2] = 4;
-        f[3] = 7;
-
         barriere.setCoordonnee(new Coordonnee(2,8, 3, 8));
 
         assertNotNull(barriere.getCoordonnee());
 
         assertEquals(2, barriere.getCoordonnee().getStartX());
-        assertEquals(8, barriere.getCoordonnee().getStartX());
+        assertEquals(8, barriere.getCoordonnee().getStartY());
         assertEquals(3, barriere.getCoordonnee().getEndX());
         assertEquals(8, barriere.getCoordonnee().getEndY());
     }

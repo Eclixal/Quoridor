@@ -32,7 +32,7 @@ public class IA extends Joueur {
       * @return la difficulté de l'IA
       */
     public Difficulte getDifficulte() {
-        return difficulte;
+        return this.DIFFICULTE;
     }
 
     /**

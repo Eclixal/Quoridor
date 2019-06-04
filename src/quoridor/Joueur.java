@@ -55,7 +55,7 @@ public abstract class Joueur {
       * @return le numero du joueur
       */
     public int getNumero() {
-        return numero;
+        return this.NUMERO;
     }
 
     /**
@@ -63,7 +63,7 @@ public abstract class Joueur {
       * @return la couleur du joueur
       */
     public String getCouleur() {
-        return couleur;
+        return this.COULEUR;
     }
 
     /**
@@ -71,7 +71,7 @@ public abstract class Joueur {
       * @return le pion utilisé par le joueur
       */
     public Pion getPion() {
-        return pion;
+        return this.pion;
     }
 
     /**
@@ -79,7 +79,7 @@ public abstract class Joueur {
       * @return la liste des barrières restantes du joueur
       */
     public ArrayList<Barriere> getBarrieres() {
-        return barrieres;
+        return this.barrieres;
     }
 
     /**
