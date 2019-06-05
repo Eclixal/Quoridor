@@ -18,6 +18,9 @@ public class PionTest {
         assertEquals(2, pion.getCoordonnee().getStartX());
         assertEquals(1, pion.getCoordonnee().getStartY());
 
+        pion.nextCoup();
+        assertNotNull(pion.getDeplacementPossibles());
+
         pion.setCoordonnee(new Coordonnee(10,4, -1,-1));
 
         assertEquals(10, pion.getCoordonnee().getStartX());
