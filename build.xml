@@ -3,10 +3,13 @@
         Projet de fin d'année Quoridor
     </description>
 
-    <property name="src" location="src"/>
+    <property name="src" location="src/quoridor"/>
     <property name="build" location="build"/>
     <property name="dist" location="dist"/>
     <property name="doc" location="doc"/>
+    <property name="test.src.dir" value="src/test"/>
+    <property name="test.build.dir" value="build/test"/>
+    <property name="reports" value="reports"/>
 
     <target name="init">
         <mkdir dir="${doc}"/>
@@ -15,7 +18,7 @@
 
     <target name="compile" depends="init"
             description="compile the source " >
-        <javac srcdir="${src}" destdir="${build}"/>
+        <javac srcdir="${src}" destdir="${build}" includeantruntime="false"/>
     </target>
 
     <target name="javadoc" depends="init" description="genere la javadoc">
@@ -37,5 +40,34 @@
         <delete dir="${build}"/>
         <delete dir="${dist}"/>
         <delete dir="${doc}"/>
+        <delete dir="${reports}"/>
     </target>
+
+    <path id="classpath.test">
+        <pathelement location="ws/junit-4.13-beta-3.jar"/>
+        <pathelement location="ws/hamcrest-core-1.3.jar"/>
+        <pathelement location="${test.src.dir}"/>
+    </path>
+
+    <target name="test-compile" depends="compile">
+        <mkdir dir="${build}"/>
+        <javac srcdir="${test.src.dir}" destdir="${build}" includeantruntime="false">
+            <classpath refid="classpath.test"/>
+        </javac>
+    </target>
+
+    <target name="test" depends="test-compile">
+        <mkdir dir="${reports}"/>
+        <junit printsummary="on" haltonfailure="yes" fork="false">
+            <formatter type="xml"/>
+            <classpath>
+                <path refid="classpath.test"/>
+                <pathelement location="${build}"/>
+            </classpath>
+            <batchtest fork="yes" todir="${reports}">
+                <fileset dir="${test.src.dir}" includes="**/*Test.java" />
+            </batchtest>
+        </junit>
+    </target>
+
 </project>

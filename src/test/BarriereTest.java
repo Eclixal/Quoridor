@@ -20,10 +20,10 @@ public class BarriereTest {
 
         assertNotNull(barriere.getCoordonnee());
 
-        assertEquals(2, barriere.getCoordonnee().getStartX());
-        assertEquals(8, barriere.getCoordonnee().getStartY());
-        assertEquals(3, barriere.getCoordonnee().getEndX());
-        assertEquals(8, barriere.getCoordonnee().getEndY());
+        assertEquals(2, barriere.getCoordonnee().getX1());
+        assertEquals(8, barriere.getCoordonnee().getY1());
+        assertEquals(3, barriere.getCoordonnee().getX2());
+        assertEquals(8, barriere.getCoordonnee().getY2());
     }
 
 }
